@@ -1,0 +1,7 @@
+
+train: img for human intrusion/train/images
+val: img for human intrusion/val/images
+test: img for human intrusion/test/images
+
+nc: 3
+names: ['intruder', 'student', 'faculty']
