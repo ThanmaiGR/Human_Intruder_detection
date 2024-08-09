@@ -1,7 +1,7 @@
 
-train: img for human intrusion/train/images
-val: img for human intrusion/val/images
-test: img for human intrusion/test/images
+train: /train/images
+val: /val/images
+test: /test/images
 
-nc: 3
-names: ['intruder', 'student', 'faculty']
+nc: 2
+names: ['intruder', 'not intruder']

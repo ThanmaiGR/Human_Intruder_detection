@@ -131,5 +131,5 @@ def predict_for_folder(folder_path):
 path = r"img for human intrusion/test/images/"
 # print(model.eval())
 
-predict_for_folder(path)
-# video()
+# predict_for_folder(path)
+video()

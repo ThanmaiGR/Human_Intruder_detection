@@ -7,7 +7,6 @@ mtcnn = MTCNN(image_size=160, margin=0, min_face_size=20) # initializing mtcnn f
 resnet = InceptionResnetV1(pretrained='vggface2').eval() # initializing resnet for face img to embedding conversion
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-print(device)
 
 
 def recognize_faculty(img):
@@ -34,7 +33,7 @@ def recognize_faculty(img):
 
             return label
     else:
-        return 'Intruder'
+        return 'intruder'
 
 
 def recognize_student(img):
@@ -62,4 +61,4 @@ def recognize_student(img):
             print(label)
             return label
     else:
-        return 'Intruder'
+        return None
